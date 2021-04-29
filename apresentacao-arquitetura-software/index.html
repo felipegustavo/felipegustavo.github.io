@@ -1,0 +1,390 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Apresentação</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+
+	<style>
+		.reveal section small {
+			display: inline-block;
+			font-size: 0.4em;
+			line-height: 1em;
+			vertical-align: top;
+		}
+
+		i {
+			font-style: italic;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>Arquitetura de Software</h1>
+				<h3>Dia-a-Dia, Atualidades e Tendências</h3>
+				<h4>MSC. Felipe Gomes</h4>
+			</section>
+
+			<section>
+				<h2>Sobre mim</h2>
+				<ul>
+					<li>Técnico em Informática pelo IFBA</li>
+					<li>Bacharel em Ciência da Computação pela UFBA</li>
+					<li>Mestre em Ciência da Computação pela UFBA</li>
+					<li>Doutorando em Ciência da Computação pela UFBA</li>
+					<li>Professor substituto no IFBA Santo Amaro</li>
+					<li>Arquiteto de Software na Labes2</li>
+					<li>Pesquisador no TD Research Team</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Agenda</h2>
+				<ul>
+					<li>Introdução</li>
+					<li>Princípios de Design</li>
+					<li>Como fazer certo?</li>
+				</ul>
+			</section>
+
+			<section>
+				<h1 class="r-fit-text">Introdução</h1>
+			</section>
+
+			<section>
+				<h2>Introdução</h2>
+				<ul>
+					<li>Criar software da maneira correta é difícil</li>
+					<li>Requer conhecimentos, habilidades, raciocínio, insight, disciplina e dedicação</li>
+					<li>Requer principalmente paixão por programação e o desejo de se tornar profissional</li>
+					<li>Quando você acerta no software algo mágico acontece...</li>
+				</ul>
+			</section>
+
+			<section>
+				<h4>Software bem feito requer uma fração dos recursos para ser mantido</h4>
+				<img src="assets/img/businessman-runs-away-from-office-vacation.jpg" class="r-stretch">
+				<small>https://www.freepik.com/premium-vector/businessman-runs-away-from-office-vacation-vector-illustration_5758277.htm</small>
+			</section>
+
+			<section>
+				<section>
+					<h4>Agora quando você erra...</h4>
+					<img src="assets/img/so jesus na causa.jpg" class="r-stretch">
+					<small>https://www.gerarmemes.com.br/</small>
+				</section>
+				<section>
+					<img src="assets/img/AAE-Stress-Resilience.png" class="r-stretch">
+					<small>https://blogs.uai.com.br/mirante/2018/10/03/10-dicas-para-reduzir-o-estresse/aae-stress-resilience/</small>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Como fazer certo?</h2>
+					<ul>
+						<li>Um bom código</li>
+						<li>Uma boa arquitetura</li>
+						<li>E principalmente...</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Lute pela arquitetura!!!</h2>
+					<p>Mas também saiba ser maleável</p>
+				</section>
+			</section>
+
+			<section>
+				<h1 class="r-fit-text">O que são</h1>
+				<h1 class="r-fit-text">Arquitetura</h1>
+				<h1 class="r-fit-text">e Design?</h1>
+			</section>
+
+			<section>
+				<h2>Desing de Software</h2>
+				<p>Refere-se ao processo de transformar as demandas do usuário (requisitos) em uma especificação de software que vai guiar desenvolvedores na implementação da solução. Tem enfoque na solução do problema e planejamento do software em um nível mais baixo.</p>
+			</section>
+
+			<section>
+				<h2>Arquitetura de Software</h2>
+				<p>Refere-se a estrutura geral de um sistema sem se procupar com detalhes de implementação. Tem foco na divisão do sistema em componentes, na organização desses componentes e como eles se comunicam.</p>
+			</section>
+
+			<section>
+				<h2>Design e Arquitetura na Prática</h2>
+				<ul>
+					<li>São a mesma coisa na prática</li>
+					<li>Os detalhes servem de base para as decisões de alto nível e vice-versa</li>
+					<li>Baixo nível e alto nível fazem parte do mesmo todo</li>
+					<li>Não há uma linha clara que separa eles, há apenas uma linha constante corta os dois níveis</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h2>Qual o Objetivo?</h2>
+				<p>O objetivo da arquitetura é minimizar os recursos humanos necessários construir e manter um software.</p>
+			</section>
+
+			<section>
+				<h2>Como medir a qualidade?</h2>
+				<p>É a medida do esforço necessário para satisfazer as demandas do cliente.</p>
+			</section>
+
+			<section>
+				<h1 class="r-fit-text">Princípios de Design</h1>
+			</section>
+
+			<section>
+				<section>
+					<h2>Progrmação Orientada a Objetos</h2>
+					<p>Os 4 Pilares</p>
+				</section>
+				<section>
+					<h3>Abstração</h3>
+					<p>Esconda detalhes de implementação dentro de alguma coisa.</p>
+				</section>
+				<section>
+					<h3>Encapsulamento</h3>
+					<p>Esconda alguma coisas no seu código numa capsula.</p>
+				</section>
+				<section>
+					<h3>Herança</h3>
+					<p>Reduça a quantidade de código reaproveitando comportamentos e propriedades.</p>
+				</section>
+				<section>
+					<h3>Polimorfismo</h3>
+					<p>Torne o seu código mutável de uma forma mais elegante e sustentável.</p>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Padrões de Projeto</h2>
+					<p>Os 6 padrões de todo arquiteto de software deve saber.</p>
+				</section>
+				<section>
+					<h3>Singleton</h3>
+					<p>Mantehna uma única referência do seu objeto compartilhada.</p>
+				</section>
+				<section>
+					<h3>Facade</h3>
+					<p>Simplifique o acesso a uma estrutura mais complexa de código.</p>
+				</section>
+				<section>
+					<h3>Factory</h3>
+					<p>Reduza a quantidade de dependências e simplifique a criação de objetos deixando que outros o façam.</p>
+				</section>
+				<section>
+					<h3>Strategy</h3>
+					<p>Torne o seu código mutável fornecendo uma família de algoritmos intercambiaveis.</p>
+				</section>
+				<section>
+					<h3>Observer</h3>
+					<p>Mantenha o seu estado consistente de forma simples e centralizada.</p>
+				</section>
+				<section>
+					<h3>Adapter</h3>
+					<p>Tenha mecanismos que permitam que componentes possam se comunicar sem se preocupar com os detalhes.</p>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Princípios SOLID</h2>
+					<p>Torne o seu design mais entendível, flexível e sustentável</p>
+				</section>
+
+				<section>
+					<h3>S: Princípio da Responbilidade Única</h3>
+					<div class="r-stack">
+						<p class="fragment fade-in-then-out">Um módulo deve ter uma, e apenas uma razão para mudar.</p>
+						<p class="fragment fade-in-then-out">Um módulo deve ser responsável por um, e apenas um, usuário ou stakeholder.</p>
+						<p class="fragment fade-in-then-out">Um módulo deve ser responsável por um, e apenas um ator.</p>
+						<div class="fragment fade-in-then-out">
+							<div>Problema</div>
+							<img src="assets/img/solid-srp.png" height="400">
+							<small>Martin, Robert. <i>Arquitetura Limpa: O Guia do Artesão para Estrutura e Design de Software</i>; Traduzido por Samantha Batista. Rio de Janeiro: Alta Books, 2018.</small>
+						</div>
+						<div class="fragment fade-in-then-out">
+							<div>Solução</div>
+							<img src="assets/img/solid-srp-2.png">
+							<small>Martin, Robert. <i>Arquitetura Limpa: O Guia do Artesão para Estrutura e Design de Software</i>; Traduzido por Samantha Batista. Rio de Janeiro: Alta Books, 2018.</small>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>O: Principio Aberto/Fechado</h3>
+					<div class="r-stack">
+						<p class="fragment fade-in-then-out">Um artefato de software deve ser aberto para extensão, mas fechado para modificação.</p>
+						<div class="fragment fade-in-then-out">
+							<div>Problema</div>
+							<img src="assets/img/solid-ocp-1.png" style="background-color: white;">
+							<small>https://dev.to/satansdeer/openclosed-principle-86a</small>
+						</div>
+						<div class="fragment fade-in-then-out">
+							<div>Solução</div>
+							<img src="assets/img/solid-ocp-2.png" height="400">
+							<small>Martin, Robert. <i>Arquitetura Limpa: O Guia do Artesão para Estrutura e Design de Software</i>; Traduzido por Samantha Batista. Rio de Janeiro: Alta Books, 2018.</small>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>L: Principio da Substituição de Liskov</h3>
+					<div class="r-stack">
+						<p class="fragment fade-in-then-out">
+							Se para cada objeto o1 do tipo <i>S</i> existe um objeto <i>o2</i> do tipo <i>T</i> tal que para todos os programas P definidos em termos de <i>T</i>, o comportamento de <i>P</i> não é modificado quando substituimos <i>o1</i> por <i>o2</i> então <i>S</i> é um subtipo de <i>T</i>.
+						</p>
+						<div class="fragment fade-in-then-out">
+							<div>Problema</div>
+							<img src="assets/img/solid-lsp-1.png" height="400">
+							<small>Martin, Robert. <i>Arquitetura Limpa: O Guia do Artesão para Estrutura e Design de Software</i>; Traduzido por Samantha Batista. Rio de Janeiro: Alta Books, 2018.</small>
+						</div>
+						<div class="fragment fade-in-then-out">
+							<div>Solução</div>
+							<img src="assets/img/solid-lsp-2.png" height="400">
+							<small>Martin, Robert. <i>Arquitetura Limpa: O Guia do Artesão para Estrutura e Design de Software</i>; Traduzido por Samantha Batista. Rio de Janeiro: Alta Books, 2018.</small>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>I: Principio da Segregação de Interface</h3>
+					<div class="r-stack">
+						<p class="fragment fade-in-then-out">
+							Evite depender de coisas que você não precisa.
+						</p>
+						<div class="fragment fade-in-then-out">
+							<div>Problema</div>
+							<img src="assets/img/solid-isp-1.png" height="400">
+							<small>Martin, Robert. <i>Arquitetura Limpa: O Guia do Artesão para Estrutura e Design de Software</i>; Traduzido por Samantha Batista. Rio de Janeiro: Alta Books, 2018.</small>
+						</div>
+						<div class="fragment fade-in-then-out">
+							<div>Solução</div>
+							<img src="assets/img/solid-isp-2.png" height="400">
+							<small>Martin, Robert. <i>Arquitetura Limpa: O Guia do Artesão para Estrutura e Design de Software</i>; Traduzido por Samantha Batista. Rio de Janeiro: Alta Books, 2018.</small>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h3>D: Principio da Inversão de Dependência</h3>
+					<div class="r-stack">
+						<p class="fragment fade-in-then-out">
+							Código que implementa políticas de alto nível não deve depender de código que implementa detalhes de baixo nível. Em vez disso, detalhes devem depender de políticas.
+						</p>
+						<div class="fragment fade-in-then-out">
+							<ul>
+								<li>Não referencie classes concretas voláteis</li>
+								<li>Não derive de classes concretas voláteis</li>
+								<li>Evite override em funções concretas</li>
+								<li>Nunca menciona o nome de qualquer coisa concreta e volátil</li>
+							</ul>
+						</div>
+						<div class="fragment fade-in-then-out">
+							<div>Solução</div>
+							<img src="assets/img/solid-dip-1.png" height="400">
+							<small>Martin, Robert. <i>Arquitetura Limpa: O Guia do Artesão para Estrutura e Design de Software</i>; Traduzido por Samantha Batista. Rio de Janeiro: Alta Books, 2018.</small>
+						</div>
+					</div>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Componentes</h2>
+					<p>A nova onda do momento é montar o sistema como se fosse um lego.</p>
+				</section>
+				<section>
+					<h2>Componentes</h2>
+					<p>Um componente refere-se a menor parte implatável de um sistema.</p>
+				</section>
+				<section>
+					<h2>Componentes</h2>
+					<p>Mantenha o seu código pequeno, além de promover o reuso e paralelizar o processo de desenvolvimento.</p>
+					<p></p>
+				</section>
+				<section>
+					<h2>O que faz um bom componente?</h2>
+					<ul>
+						<li>Ser reusável</li>
+						<li>Não o forçe a depender de coisas que não precisam</li>
+						<li>Deve ter apenas uma responsabilidade</li>
+						<li>Evite dependências ciclicas</li>
+					</ul>
+				</section>
+			</section>
+
+			<section>
+				<h1 class="r-fit-text">Como fazer certo?</h1>
+			</section>
+
+			<section>
+				<h2>Caractéristicas de uma boa Arquitetura</h2>
+				<ul>
+					<li>Deve estabelecer fronteiras</li>
+					<li>Deve estabelecer políticas</li>
+					<li>Deve estabelecer níveis</li>
+					<li>Deve ser independente de frameworks, banco de dados, UI e outros agente externos</li>
+					<li>Deve ser testável</li>
+					<li>Deve ser gritante</li>
+				</ul>
+			</section>
+
+			<section>
+				<section>
+					<h2>Evite os vilões do bom Design</h2>
+					<p>O que evitar para ter um bom design</p>
+				</section>
+				<section>
+					<h2>Anti-Padrões</h2>
+					<p>É um padrão que te diz como sair de um problema para um mal solução.</p>
+				</section>
+				<section>
+					<h2>Code Smells</h2>
+					<p>Pode ser ou não ruim, mas é um indicativo de que algo requer uma análise.</p>
+				</section>
+				<section>
+					<h2>Dívida Técnica</h2>
+					<p>Refere-se a atividades que você deveria ter feito durante o projeto mas não as fez por algum motivo ou fez algo de uma forma não ideal. A dívida acumulada irá reduzir a produtividade do time e gerar dor de cabeça para os stakeholders.</p>
+				</section>
+			</section>
+
+			<section>
+				<h2>A Arquitetura Limpa</h2>
+				<img src="assets/img/cleanarchitecture.jpg" class="r-stretch">
+				<small>Martin, Robert. <i>Arquitetura Limpa: O Guia do Artesão para Estrutura e Design de Software</i>; Traduzido por Samantha Batista. Rio de Janeiro: Alta Books, 2018.</small>
+			</section>
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			center: true,
+			slideNumber: 'c/t',
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
